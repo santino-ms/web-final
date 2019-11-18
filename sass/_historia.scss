@@ -1,0 +1,32 @@
+.contenedor-historia {
+    margin: 30px auto !important;
+    width: 90%;
+    min-height: 50vh;
+    padding: 10px;
+    background-color: rgba($color:$blanco, $alpha: 0.8);
+    border-radius: $br-contenedor;
+    color: $negro-pleno;
+    
+
+    h2 {
+        padding: 10px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $negro-pleno;
+        position: absolute;
+        top: 55px;
+        left: 25px;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+    
+ }

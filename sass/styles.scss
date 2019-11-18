@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'portada';
+@import 'historia';
+@import 'integrantes';
+@import 'discos';
+@import 'galeria';
+@import 'contacto';
+@import 'footer';
+
+body {
+   background-image: url("../imagenes/bg.jpg");
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   z-index: -1;
+}
+
+/*.flecha-flotante i {
+   float: right;
+   margin-right: 100px;
+   font-size: 150%;
+   background: rgba(0, 0, 0, 1);
+}*/

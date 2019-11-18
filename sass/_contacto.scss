@@ -1,0 +1,112 @@
+#contacto {
+    margin: 25px 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba($color: $negro, $alpha: 0.8);
+   
+    .contenedor-contacto {
+        
+        color: $blanco-pleno;
+        width: 50%;
+        background-color: rgba(233, 128, 128, 0.8);
+        margin: auto;
+        border-radius: $br-contenedor;
+       
+        form {
+           
+        padding: 10px 30px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+
+        .parteUno {
+            line-height: 130%;
+            margin: 10px 30px 0 0;
+             div {
+                padding: 15px;
+                 label {
+                     padding-right: 5px;
+                     font-size: 18px;
+                 }
+             }
+             .selectPais {
+                @media (max-width:768px) {
+                padding: 15px 0;
+                }
+            }
+            @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            }
+            
+        }
+        .parteDos {
+            justify-items: flex-end;
+            padding: 15px;
+
+        label a{
+            color: $negro-pleno;
+        }
+        textarea {
+            resize: none;
+        }
+           
+            #mensaje {
+            @media (max-width:768px){
+            max-width: 220px;
+            }
+            .terminos {
+            @media (max-width:768px){
+               display: flex;
+               width: 95%;
+               justify-content: space-between;
+               
+            }
+            }
+        }
+        }
+        
+        @media (max-width:768px){
+            display: inline;
+            padding: 0;
+            //width: 80%;
+        }
+        
+       /*.parteUno {
+        line-height: 130%;
+       margin: 0 30px 0 0;
+        div {
+           padding: 15px;
+            label {
+                padding-right: 5px;
+                font-size: 18px;
+            }
+        }
+        }*/
+
+        /*.parteDos {
+       
+        }*/
+    }
+    @media (max-width:768px){
+        width: 80%;
+    }
+       }
+
+    h2 {
+        padding: 10px 0 0 15px;
+        color: $blanco-pleno;
+        font-weight: 500;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 65px;
+        height: 2px;
+        background-color: $blanco-pleno;
+        margin: 10px 45px;
+    }
+}

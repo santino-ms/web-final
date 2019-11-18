@@ -1,0 +1,92 @@
+#discos {
+    .contenedor-discos {
+   
+    width: 90%;
+    background-color: rgba($color: $blanco, $alpha: 0.8);
+    border-radius: $br-contenedor;
+    margin: 20px auto;
+    }
+    
+    h2 {
+    padding: 20px 0 10px 20px;
+    font-weight: 500;
+    color: $negro-pleno;
+    position: relative;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $negro-pleno;
+        position: absolute;
+        top: 65px;
+        left: 65px;
+    }
+
+     div .reproductor {
+         display: flex;
+         max-width: 100%;
+         grid-template-columns: repeat(2);
+         justify-content: space-around;
+         align-items: center;
+        padding: 20px 40px;
+        grid-area: 1 / 1 / 1 / 6;
+
+    }
+
+    .clase-grid { 
+        display: grid;
+        list-style: none;
+        padding: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2);
+        row-gap: 30px;
+        text-align: center;
+        @media (max-width:768px){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5);
+
+        }
+
+        .tapaDisco {
+            max-width: 100%;
+            text-align: center;
+            position: relative;    
+            
+            a img {
+                width: 100%;
+            }
+        }  
+
+        .tapaDisco:hover a img {
+            opacity: 0.5;
+            background-image: url(//imagenes/play-circle-solid-01.png);
+            width: 100%;
+            z-index: 2;
+        }
+        
+
+
+        /*.iconoplay {
+            display: none;
+        }
+        i {
+            display: block;
+            z-index: 1; 
+            color: $negro-pleno;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+        }
+         .tapaDisco:hover i{
+            display: block;
+           
+        }
+        
+        
+        */
+    }
+
+}
